@@ -1,4 +1,4 @@
-# seo-poligon-test — сайт-полигон для SEO Monitor
+# ashville51-sudo.github.io — сайт-полигон для SEO Monitor
 
 Статический сайт с **намеренно посаженными SEO-проблемами** — постоянный
 E2E-стенд для [seo-monitor](https://github.com/ashville51-sudo/seo-monitor).
@@ -14,17 +14,19 @@ E2E-стенд для [seo-monitor](https://github.com/ashville51-sudo/seo-monit
   добавить 404) — тоже коммитом, история поломок видна в git.
 - Прогон аудита: `seo-monitor demo <URL полигона>` — сверить находки с паспортом.
 
+С 2026-07-06 репозиторий переименован в `ashville51-sudo.github.io` —
+полигон стал user-сайтом GitHub Pages и живёт в корне домена
+`https://ashville51-sudo.github.io/`; robots.txt виден краулерам,
+проверки CR-020/CR-021 работают в полную силу (см. PASSPORT.md).
+
 ## Привязка кастомного домена (когда куплен)
 
 1. Заменить базовый URL во всех файлах (canonical, sitemap.xml, robots.txt):
-   `https://ashville51-sudo.github.io/seo-poligon-test` → `https://<домен>`.
+   `https://ashville51-sudo.github.io` → `https://<домен>`.
 2. Добавить в корень файл `CNAME` со строкой `<домен>`.
 3. DNS у регистратора: 4 A-записи на `185.199.108.153 / 109.153 / 110.153 / 111.153`,
    CNAME `www` → `ashville51-sudo.github.io`.
 4. В Settings → Pages включить Enforce HTTPS после выпуска сертификата.
-
-До привязки домена robots.txt не виден краулерам (лежит не в корне домена) —
-проверки CR-020/CR-021 дают `no_data`, это ожидаемо (см. PASSPORT.md).
 
 ## Метки для сервисов
 

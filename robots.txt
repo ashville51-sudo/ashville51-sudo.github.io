@@ -3,4 +3,4 @@ Disallow: /catalog/page-4/
 Disallow: /catalog/?filter=
 Disallow: /css/blocked.css
 
-Sitemap: https://ashville51-sudo.github.io/seo-poligon-test/sitemap.xml
+Sitemap: https://ashville51-sudo.github.io/sitemap.xml
